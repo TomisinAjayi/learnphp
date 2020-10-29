@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+.heading button {
+    margin-bottom: 20px;
+    padding: 4px 8px;
+}
+.new_todo {
+    text-decoration: none;
+    color: black;
+}
+.todo_list {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.task_section {
+    display: inline-flex;
+}
+label {
+    margin: 0px 30px;
+}
+input[type=checkbox]:checked + label {
+    text-decoration-line: line-through;
+    font-weight: 900;
+}
+.delete_btn {
+    color: red;
+    text-decoration: none;
+}

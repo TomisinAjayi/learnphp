@@ -1,0 +1,37 @@
+body {
+    margin: 200px auto;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 50%;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 0px;
+}
+.dateSection {
+    margin-bottom: 10px;
+}
+label {
+    font-size: 19px;
+}
+#taskDate {
+    width: 204px;
+}
+.error {
+    display: none;
+}
+#taskInput {
+    padding: 7px 22px;
+    margin-left: 54px;
+}
+#newTask {
+    padding: 7px 4px;
+}
+#submitTodo {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 4px 8px;
+    margin-bottom: 20px;
+}
