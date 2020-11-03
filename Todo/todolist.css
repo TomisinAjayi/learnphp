@@ -4,6 +4,9 @@ body {
     width: 50%;
     text-align: center;
 }
+h4 {
+    margin-bottom: 10px;
+}
 .heading button {
     margin-bottom: 20px;
     padding: 4px 8px;
@@ -20,13 +23,21 @@ body {
     display: inline-flex;
 }
 label {
-    margin: 0px 30px;
+    margin: 10px 110px;
+    text-transform: capitalize;
 }
-input[type=checkbox]:checked + label {
+#taskInput {
+    margin-top: 14px;
+}
+input[type="checkbox"]:checked + label {
     text-decoration-line: line-through;
     font-weight: 900;
 }
 .delete_btn {
     color: red;
+    text-decoration: none;
+    font-size: 30px;
+}
+a.moreTasks {
     text-decoration: none;
 }

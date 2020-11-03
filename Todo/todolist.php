@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="heading">
-        <h4>New DAY? Create a new TO-DO</h4>
+        <h4>New DAY? Create a new TO-DO?</h4>
         <button><a href="todo.php" class="new_todo">New Todo</a></button>
     </div>
     <div class="todo_list">
@@ -25,6 +25,10 @@
             <input type="checkbox" id="taskInput" name="task" value=" ">
             <label for="taskInput"> <?php echo $_POST['task'] ?></label>
             <a href="todo.php?del_task=<?php echo $_POST['task'] ?>" class="delete_btn" type="button">x</a>
+            <hr>
+        </div>
+        <div >
+            <a href="" class="moreTasks">More Tasks?</a>
         </div>
     </div>
 

@@ -25,6 +25,13 @@ label {
     padding: 7px 22px;
     margin-left: 54px;
 }
+input.added_input {
+    margin-left: 38%;
+    display: block;
+    padding: 7px 22px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 #newTask {
     padding: 7px 4px;
 }

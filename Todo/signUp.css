@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding-top: 10px;
+}
+.body {
+    margin: 150px auto;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 50%;
+    text-align: center;
+    padding: 50px 30px;
+}
+input {
+    display: block;
+    width: 37%;
+    margin: 10px auto;
+    border-radius: 12px;
+    border: 1px solid #80808061;
+    padding: 7px;
+}
+button {
+    padding: 10px 31px;
+    background-color: #4b4b9c8c;
+    border: 1px solid #4b4b9c8c;
+    border-radius: 4px;
+    font-weight: 700;
+}
