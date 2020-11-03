@@ -24,9 +24,6 @@ input {
     border: 1px solid #80808061;
     padding: 7px;
 }
-.error {
-    color: red;
-}
 button {
     padding: 10px 31px;
     background-color: #4b4b9c8c;
@@ -35,7 +32,7 @@ button {
     font-weight: 700;
 }
 .body p a {
-    color: black;
+    color: inherit;
     text-decoration: none;
 }
 @media only screen and (max-width: 900px) {

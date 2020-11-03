@@ -1,4 +1,13 @@
 body {
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding-top: 10px;
+}
+.body {
     margin: 200px auto;
     padding: 0;
     border: 1px solid black;
@@ -41,4 +50,9 @@ input.added_input {
     margin-top: 20px;
     padding: 4px 8px;
     margin-bottom: 20px;
+}
+@media only screen and (max-width: 900px) {
+    input {
+        
+    }
 }

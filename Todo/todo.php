@@ -35,20 +35,23 @@
     <link rel="stylesheet" href="todo.css">
 </head>
 <body>
-    <div class="heading">
-        <h2>TO-DO list</h2>
-        <p>Best to prepare a to-do list the night before or early in the morning.</p>
-    </div>
-    <form action="todolist.php" method="post" id="formSection">
-        <div class="dateSection">
-        <label for="taskDate">Date:</label>
-        <input type="date" name="date" id="taskDate" class="task_date" value= "<?php echo $date;?>">
+    <h1>TO-DO list</h1>
+    <div class="body">
+        <div class="heading">
+            <h2><?php echo $_POST["name"]; echo "'s list"?></h2>
+            <p>Best to prepare a to-do list the night before or early in the morning.</p>
         </div>
+        <form action="todolist.php" method="post" id="formSection">
+            <div class="dateSection">
+            <label for="taskDate">Date:</label>
+            <input type="date" name="date" id="taskDate" class="task_date" value= "<?php echo $date;?>">
+            </div>
 
-        <input type="text" name="task" id="taskInput" class="task_input" value= "<?php echo $task;?>">
-        <button type="button" name="addNewTask" id="newTask" class="new_task" onclick="addNewInput()">Add New Task</button>
-        <input type="submit" name="submit" id="submitTodo" class="submit_todo" />
-    </form>
+            <input type="text" name="task" id="taskInput" class="task_input" value= "<?php echo $task;?>">
+            <button type="button" name="addNewTask" id="newTask" class="new_task" onclick="addNewInput()">Add New Task</button>
+            <input type="submit" name="submit" id="submitTodo" class="submit_todo" />
+        </form>
+    </div>
 
     <script src="todo.js"></script>
 </body>
