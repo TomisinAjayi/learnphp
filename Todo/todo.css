@@ -1,14 +1,14 @@
 body {
     margin: 0;
 }
-h1 {
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0;
-    padding-top: 10px;
+div#navbarText {
+    margin-left: 81%;
+}
+.navbar {
+    background-color: #4b4b9c8c; 
 }
 .body {
-    margin: 200px auto;
+    margin: 110px auto;
     padding: 0;
     border: 1px solid black;
     border-radius: 4px;
@@ -52,7 +52,10 @@ input.added_input {
     margin-bottom: 20px;
 }
 @media only screen and (max-width: 900px) {
-    input {
-        
+    div#navbarText {
+        margin-left: 0;
+    }
+    .title {
+        font-size: 16px;
     }
 }

@@ -1,14 +1,14 @@
 body {
     margin: 0;
 }
-h1 {
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0;
-    padding-top: 10px;
+div#navbarText {
+    margin-left: 81%;
+}
+.navbar {
+    background-color: #4b4b9c8c; 
 }
 .body {
-    margin: 150px auto;
+    margin: 110px auto;
     padding: 0;
     border: 1px solid black;
     border-radius: 4px;
@@ -16,7 +16,7 @@ h1 {
     text-align: center;
     padding: 50px 30px;
 }
-input {
+.input_style {
     display: block;
     width: 37%;
     margin: 10px auto;
@@ -24,7 +24,10 @@ input {
     border: 1px solid #80808061;
     padding: 7px;
 }
-button {
+.error {
+    color: red;
+}
+.login_btn {
     padding: 10px 31px;
     background-color: #4b4b9c8c;
     border: 1px solid #4b4b9c8c;
@@ -36,7 +39,13 @@ button {
     text-decoration: none;
 }
 @media only screen and (max-width: 900px) {
-    input {
+    .input_style {
         width: 100%;
+    }
+    div#navbarText {
+        margin-left: 0;
+    }
+    .title {
+        font-size: 16px;
     }
 }
