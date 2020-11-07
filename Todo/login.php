@@ -1,3 +1,5 @@
+<?php include('connection.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,11 +35,12 @@
     <div class="body">
         <h3 class="title">Kindly LOG IN to access your data :)</h3>
 
-        <form action="" method="post">
-            <input type="text" name="name" id="user" placeholder="Name" class="input_style">
-            <input type="password" name="password" id="pwd" placeholder="Password" class="input_style"> 
-            <button type="submit" class="login_btn">LOG IN</button>
-            <p><a href="signUp.php">Don't have an account?Sign Up</a></p>
+        <form action="login.php" method="post">
+          <?php include('errors.php'); ?>
+          <input type="text" name="username" id="user" placeholder="Name" class="input_style">
+          <input type="password" name="password" id="pwd" placeholder="Password" class="input_style"> 
+          <button type="submit" name="login-btn" class="login_btn">LOG IN</button>
+          <p><a href="signUp.php">Don't have an account?Sign Up</a></p>
         </form>
     </div>
 </body>

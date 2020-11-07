@@ -1,29 +1,15 @@
-<?php
+<?php 
+  session_start(); 
 
-    function filterTask($field){
-        // Sanitize string
-        $field = filter_var(trim($field), FILTER_SANITIZE_TASK);
-        if(!empty($field)){
-            return $field;
-        } else{
-            return FALSE;
-        }
-    }
-    // define variable with empty var
-    $taskErr = " ";
-    $task = " ";
-
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
-
-        if(empty($_POST['taskInput'])) {
-            $taskErr = "You must fill this field";
-        } else {
-            $task = filterTask($_POST["task"]);
-            if($task == FALSE) {
-                $errors = "Enter valid task";
-            }
-        }
-    }
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +45,7 @@
     </nav>
     <div class="body">
         <div class="heading">
-            <h2><?php echo $_POST["name"]; echo "'s list"?></h2>
+            <h2 style="text-transform:capitalize"><?php echo $_POST["username"]; echo "'s list"?></h2>
             <p class="title">Best to prepare a to-do list the night before or early in the morning.</p>
         </div>
         <form action="todolist.php" method="post" id="formSection">
