@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+div#navbarText {
+    margin-left: 81%;
+}
+.navbar {
+    background-color: #4b4b9c8c; 
+}
+.body {
+    margin: 110px auto;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 50%;
+    text-align: center;
+    padding: 50px 30px;
+}
+.input_style {
+    display: block;
+    width: 37%;
+    margin: 10px auto;
+    border-radius: 12px;
+    border: 1px solid #80808061;
+    padding: 7px;
+}
+.error {
+    color: red;
+}
+.signUp_btn {
+    padding: 10px 31px;
+    background-color: #4b4b9c8c;
+    border: 1px solid #4b4b9c8c;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.body p a {
+    color: black;
+    text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+    .input_style {
+        width: 100%;
+    }
+    div#navbarText {
+        margin-left: 0;
+    }
+    .title {
+        font-size: 14px;
+    }
+}
